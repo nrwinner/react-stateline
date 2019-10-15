@@ -7,9 +7,9 @@ import App_Store from '../App.store';
 let Parent: React.FC<{ someValue?: string }> = (props) => {
   return (
     <div className="parent">
-      Big Test
+      Parent Component
       <div>
-        { props.someValue }
+        'someValue': <span>{ props.someValue }</span>
       </div>
       <Child />
     </div>

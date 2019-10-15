@@ -16,8 +16,15 @@ class ContainerClass extends React.Component<{ someValue?: string }> {
   render() {
     return (
       <div>
-        { this.props.someValue }
-        <button onClick={this.clickEvent}>Container Button Dawg</button>
+        <p>
+          <p>
+            <button onClick={this.clickEvent}>Container Button</button>
+          </p>
+          Some nested container component
+          <div>
+            'someValue': <span>{ this.props.someValue }</span>
+          </div>
+        </p>
       </div>
     )
   }

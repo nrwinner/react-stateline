@@ -6,10 +6,14 @@ import Container from '../components/Container';
 let Child: React.FC<{ someValue?: string }> = (props) => {
   return (
     <div className="child">
-      Child
       <div>
-        { props.someValue }
-        <Container />
+        <p>
+          Child Component
+          <div>
+            'someValue': <span>{ props.someValue }</span>
+          </div>
+          <Container />
+        </p>
       </div>
     </div>
   )
