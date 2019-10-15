@@ -9,16 +9,20 @@ class ContainerClass extends React.Component<{ someValue?: string }> {
     super(props);
   }
 
+  clickEvent() {
+    App_Store.getInstance().someValue = Math.random().toString();
+  }
+
   render() {
     return (
       <div>
         { this.props.someValue }
+        <button onClick={this.clickEvent}>Container Button Dawg</button>
       </div>
     )
   }
 }
 
-// @ts-ignore
-let Container = resolve(App_Store.getInstance(), 'someValue')(ContainerClass);
+const Container = resolve(App_Store.getInstance(), 'someValue')(ContainerClass);
 
 export default Container;

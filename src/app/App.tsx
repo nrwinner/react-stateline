@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from './components/Container';
 import Parent from './components/Parent';
 import App_Store from './App.store';
 
@@ -14,10 +13,9 @@ const App: React.FC = () => {
   
   return (
     <div>
-      <Container />
       <Parent />
 
-      <button onClick={ clickEvent } />
+      <button onClick={ clickEvent }>Root Button Dawg</button>
     </div>
   );
 }
