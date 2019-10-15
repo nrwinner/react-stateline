@@ -1,3 +1,6 @@
+# react-stateline
+A lightweight Rx-based state-management library for self-contained modules.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
