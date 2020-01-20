@@ -1,23 +1,4 @@
-/**
- * @class ExampleComponent
- */
+import resolve from './store/resolve';
+import store, { ReactStore } from './store/store';
 
-import * as React from 'react'
-
-import styles from './styles.css'
-
-export type Props = { text: string }
-
-export default class ExampleComponent extends React.Component<Props> {
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
-}
+export { store, resolve, ReactStore };
